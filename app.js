@@ -13,6 +13,7 @@ const connectDB = require('./config/db');
 
 // Load config
 dotenv.config({ path: './config/config.env' });
+require(dotenv).config()
 
 //  Passport config
 require('./config/passport')(passport);
